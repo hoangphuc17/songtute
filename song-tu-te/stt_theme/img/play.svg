@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="56px" viewBox="0 0 50 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Polygon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="orange" transform="translate(-14.000000, -11.000000)" fill="#FBAC17" fill-rule="nonzero">
+            <path d="M41.5,12.4433757 L60.7487113,23.5566243 C62.2957167,24.4497883 63.2487113,26.1004234 63.2487113,27.8867513 L63.2487113,50.1132487 C63.2487113,51.8995766 62.2957167,53.5502117 60.7487113,54.4433757 L41.5,65.5566243 C39.9529946,66.4497883 38.0470054,66.4497883 36.5,65.5566243 L17.2512887,54.4433757 C15.7042833,53.5502117 14.7512887,51.8995766 14.7512887,50.1132487 L14.7512887,27.8867513 C14.7512887,26.1004234 15.7042833,24.4497883 17.2512887,23.5566243 L36.5,12.4433757 C38.0470054,11.5502117 39.9529946,11.5502117 41.5,12.4433757 Z" id="Polygon"></path>
+        </g>
+        <polygon id="Triangle" fill="#000000" fill-rule="nonzero" points="33 27.8214286 20 36.6428571 20 19"></polygon>
+    </g>
+</svg>

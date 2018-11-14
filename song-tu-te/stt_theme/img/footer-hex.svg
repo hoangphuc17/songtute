@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="227px" height="259px" viewBox="0 0 227 259" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Polygon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.1">
+        <g id="footer" transform="translate(-445.000000, -65.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M563.260492,66.8047794 L666.519852,126.43959 C669.613225,128.226089 671.51872,131.527002 671.51872,135.099191 L671.51872,254.374039 C671.51872,257.946228 669.613225,261.247141 666.519852,263.03364 L563.260492,322.66845 C560.165906,324.455649 556.352814,324.455649 553.258229,322.66845 L449.998868,263.03364 C446.905495,261.247141 445,257.946228 445,254.374039 L445,135.099191 C445,131.527002 446.905495,128.226089 449.998868,126.43959 L553.258229,66.8047794 C556.352814,65.0175803 560.165906,65.0175803 563.260492,66.8047794 Z" id="Polygon"></path>
+        </g>
+    </g>
+</svg>

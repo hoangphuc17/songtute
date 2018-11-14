@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="173px" height="183px" viewBox="0 0 173 183" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Polygon 3 Copy 25</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M61.488927,1.32371127 L107.988927,28.0913134 C111.089176,29.8759636 113,33.1807284 113,36.757951 L113,90.242049 C113,93.8192716 111.089176,97.1240364 107.988927,98.9086866 L61.488927,125.676289 C58.4005492,127.454105 54.5994508,127.454105 51.511073,125.676289 L5.01107297,98.9086866 C1.91082379,97.1240364 2.68667966e-13,93.8192716 2.68229883e-13,90.242049 L2.27373675e-13,36.757951 C2.2375838e-13,33.1807284 1.91082379,29.8759636 5.01107297,28.0913134 L51.511073,1.32371127 C54.5994508,-0.454105278 58.4005492,-0.454105278 61.488927,1.32371127 Z" id="path-1"></path>
+        <filter x="-44.2%" y="-31.5%" width="188.5%" height="178.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.253746811   0 0 0 0 0.253746811   0 0 0 0 0.253746811  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_home-copy-2" transform="translate(-636.000000, -3940.000000)" fill-rule="nonzero">
+            <g id="Group-4" transform="translate(0.000000, 1637.000000)">
+                <g id="btn_lg" transform="translate(666.000000, 2321.000000)">
+                    <g id="Polygon-3-Copy-25">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#000000" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

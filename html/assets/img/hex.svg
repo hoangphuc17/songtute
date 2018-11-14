@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="37px" viewBox="0 0 33 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Polygon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hero" transform="translate(-666.000000, -598.000000)" fill="#FBAC17" fill-rule="nonzero">
+            <g id="Group-15">
+                <g id="Group-3" transform="translate(666.000000, 598.000000)">
+                    <path d="M19,0.789754259 L30.5,7.42928235 C32.0470054,8.32244633 33,9.97308142 33,11.7594094 L33,25.0384656 C33,26.8247935 32.0470054,28.4754286 30.5,29.3685926 L19,36.0081207 C17.4529946,36.9012847 15.5470054,36.9012847 14,36.0081207 L2.5,29.3685926 C0.952994616,28.4754286 4.17733689e-14,26.8247935 3.99680289e-14,25.0384656 L2.84217094e-14,11.7594094 C2.74096584e-14,9.97308142 0.952994616,8.32244633 2.5,7.42928235 L14,0.789754259 C15.5470054,-0.103409716 17.4529946,-0.103409716 19,0.789754259 Z" id="Polygon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

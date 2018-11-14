@@ -1,0 +1,15 @@
+.dis-none
+{
+	display: none;
+}
+.acf-oembed .canvas .canvas-media iframe
+{
+	margin: 0 auto;
+	padding: 15px;
+	width: unset;
+}
+.acf-oembed.has-value .canvas
+{
+	min-height: unset;
+}
+
