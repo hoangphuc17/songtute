@@ -1,0 +1,30 @@
+<?php
+function get_primary_category($post_id = false){
+	$perma_cat = get_post_meta($post_id , '_yoast_wpseo_primary_category', true);
+	if ( $perma_cat != null ) {
+		$cat_id = $perma_cat;
+		$category = get_category($cat_id);
+	}
+	if(!isset($category)){
+		$categories = get_the_category($post_id);
+		$category = $categories[0];
+	}
+
+	return $category;
+}
+//check cate có cha không
+function category_has_parent($catid){
+    $category = get_category($catid);
+    if ($category->category_parent > 0){
+        return true;
+    }
+    return false;
+}
+// convert secondes to hours + minutes
+function secondtoHMS($second)
+{
+	$hours = floor($second / 3600) > 0 ? floor($second / 3600).' giờ ' : '' ;
+	$minutes = floor(($second / 60) % 60) > 0 ? floor(($second / 60) % 60). ' phút' : '';
+
+	return $hours.$minutes;
+}

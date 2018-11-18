@@ -1,0 +1,44 @@
+<?php
+
+    $list_posts = sst_auto_posts_zone_co_thu_tu('stt_home_lastest', 'stt_home_lastest_sub',stt_home_lastest,['playlist', 'recipe', 'post'], 8);
+?>
+
+<div class="bg-triangle bg-white">
+    <div class="main-padding pb-0">
+        <div class="container-fluid">
+            <h2 class="text-center">Mới nhất</h2>
+            <div class="card-columns pt-5">
+                <?php
+                    foreach ( $list_posts as $post):
+                        setup_postdata( $post );
+                        $cate = get_primary_category($post);
+                        $title = get_the_title();
+                        $excerpt  = get_the_excerpt();
+                        $instructor = get_the_terms($post, 'instructor')[0];
+                        $level =  get_the_terms($post, 'level')[0];
+                        $thoiluong = get_field('pl_thoi_luong');
+                        $src_thumbnail = get_the_post_thumbnail_url($post,'thumbnail-zise-1');
+
+                ?>
+
+                <div class="card">
+                    <a href="<?php the_permalink(); ?>">
+                  <img class="card-img-top" src="<?php echo  $src_thumbnail; ?>">
+                  <div class="card-body">
+                    <small class="namecate"><?php echo $cate->name;  ?></small>
+                    <h5 class="card-title"><?php echo $title; ?></h5>
+                    <p class="card-text"><?php echo $excerpt;  ?></p>
+                    <span class="badge badge-pill badge-tute"><?php echo $level->name; ?></span>
+                    <span class="badge badge-pill badge-tute"><?php echo  $thoiluong; ?></span>
+                  </div>
+                </a>
+                </div>
+                <?php
+                    endforeach;
+                    wp_reset_postdata();
+                ?>
+
+            </div>
+        </div>
+    </div>
+</div>
