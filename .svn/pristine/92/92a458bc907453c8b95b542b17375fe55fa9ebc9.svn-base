@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="158px" height="68px" viewBox="0 0 158 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Polygon Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M84.4430001,-43.4180991 L98.4430001,-34.3763744 C101.295064,-32.5344046 103.017721,-29.3711579 103.017721,-25.9759965 L103.017721,73.9759965 C103.017721,77.3711579 101.295064,80.5344046 98.4430001,82.3763744 L84.4430001,91.4180991 C81.1405757,93.5509285 76.8948667,93.5509285 73.5924423,91.4180991 L59.5924423,82.3763744 C56.7403783,80.5344046 55.0177212,77.3711579 55.0177212,73.9759965 L55.0177212,-25.9759965 C55.0177212,-29.3711579 56.7403783,-32.5344046 59.5924423,-34.3763744 L73.5924423,-43.4180991 C76.8948667,-45.5509285 81.1405757,-45.5509285 84.4430001,-43.4180991 Z" id="path-1"></path>
+        <filter x="-20.8%" y="-14.5%" width="183.3%" height="129.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="10" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.149513134 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="detail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Polygon-Copy-2" fill-rule="nonzero" transform="translate(79.017721, 24.000000) rotate(90.000000) translate(-79.017721, -24.000000) ">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#FBAC17" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
