@@ -74,12 +74,3 @@
 	  	if (classList.length > 1) removeClass(el, classList.slice(1).join(' '));
 	}
 })();
-$(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-
-     //>=, not <=
-    if (scroll >= 5) {
-        //clearHeader, not clearheader - caps H
-        $(".navbar-tute").addClass("navbar-tute-index");
-    }
-});

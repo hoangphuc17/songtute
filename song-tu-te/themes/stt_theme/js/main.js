@@ -94,6 +94,7 @@ jQuery(document).ready(function($){
 		$('.img-svg').addClass('zoomOutImg');
 		setTimeout(function(){ 
 			$('.btn-modal').addClass('active-popup');
+			$('body').addClass('no-scroll');
 		}, 100);
 		setTimeout(function(){
 			$('.video-slide').addClass('show-video');
@@ -103,7 +104,8 @@ jQuery(document).ready(function($){
 		return false;
 	});
 	$('.btn-close-video').click(function() {
-		$(this).removeClass('show')
+		$(this).removeClass('show');
+		$('body').removeClass('no-scroll');
 		$('.video-slide').removeClass('show-video');
 		Snap("#ele_hexagon path").animate({'d': svgDefault}, 1000, mina.easeinout);
 		setTimeout(function(){
@@ -121,6 +123,18 @@ jQuery(document).ready(function($){
 		
 
 	});
+	$(window).scroll(function() {    
+        var scrollFilter = $(window).scrollTop();
+
+         //>=, not <=
+        if (scrollFilter >= 250) {
+            //clearHeader, not clearheader - caps H
+            $(".filter-row").addClass("filter-fixed");
+        }
+        else {
+          $(".filter-row").removeClass("filter-fixed");
+        }
+    });
 
 });
 

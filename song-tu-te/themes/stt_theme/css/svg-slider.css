@@ -7,11 +7,24 @@
 Main Components 
 
 -------------------------------- */
+.gallery-wrapper .gallery {
+  margin-top: 60px;
+}
+.gallery-wrapper li a {
+  pointer-events: none;
+}
+.gallery-wrapper li svg:hover use.cover-layer, .gallery-wrapper li svg:hover use.cover-layer-black, .cd-svg-clipped-slider .gallery li.selected use.cover-layer {
+  opacity: 0;
+}
+.gallery-wrapper li.selected a {
+  pointer-events: auto;
+}
 .cd-svg-clipped-slider {
   position: relative;
   width: 100%;
   max-width: 1440px;
-  margin: 4em auto;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 .cd-svg-clipped-slider .gallery-wrapper,
 .cd-svg-clipped-slider .gallery,
@@ -45,9 +58,9 @@ Main Components
   padding-bottom: 50%;
   /* width(50%) * image aspect ratio (800/800) */
   opacity: 1;
-  -webkit-transform: translateX(0) scale(1);
-      -ms-transform: translateX(0) scale(1);
-          transform: translateX(0) scale(1);
+  -webkit-transform: translateX(0) scale(1.2);
+      -ms-transform: translateX(0) scale(1.2);
+          transform: translateX(0) scale(1.2);
   cursor: auto;
 }
 .cd-svg-clipped-slider .caption small {
@@ -65,6 +78,7 @@ Main Components
   /* .right -> slide visible on the right */
   z-index: 2;
   opacity: 1;
+  top: -30px;
 }
 .cd-svg-clipped-slider .svg-wrapper {
   /* using padding Hack to fix bug on IE - svg height not properly calculated */
@@ -86,16 +100,12 @@ Main Components
   transition: opacity .3s;
   opacity: .3;
 }
-.cd-svg-clipped-slider use.cover-layer:hover {
-  opacity: 0;
-}
-.cd-svg-clipped-slider .gallery li.selected use.cover-layer {
-  opacity: 0.4;
+.cd-svg-clipped-slider .gallery li.selected use.cover-layer-black {
+  opacity: 1;
 }
 .cd-svg-clipped-slider .caption {
-  margin: -250px auto 0;
-  z-index: 9999;
-  overflow: hidden;
+  margin: -200px auto 0;
+  z-index: 10;
   pointer-events: none;
   max-width: 300px;
   color: #fff;
@@ -124,9 +134,9 @@ Main Components
   /* slide visible in the center */
   z-index: 2;
   position: relative;
-  -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(0) translateY(-60px);
+      -ms-transform: translateX(0) translateY(-60px);
+          transform: translateX(0) translateY(-60px);
   opacity: 1;
 }
 .cd-svg-clipped-slider .caption li.left {
@@ -135,9 +145,82 @@ Main Components
       -ms-transform: translateX(-100px);
           transform: translateX(-100px);
 }
+.cd-svg-clipped-slider .caption li.selected:after {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,0.3);
+  border: 1px solid #fff;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  content: "\e6ad";
+  font-family: 'themify';
+  font-size: 36px;
+  line-height: 120px;
+}
+.after-featured {
+  margin-top: -100px; 
+  z-index: 30;
+}
+@media only screen and (max-width: 768px) {
+  .cd-svg-clipped-slider .caption li.selected:after {
+    top: -70px;
+    left: 50%;
+    width: 75px;
+    height: 75px;
+    font-size: 24px;
+    line-height: 75px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .cd-svg-clipped-slider .caption li {
     font-size: 24px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .cd-svg-clipped-slider .caption li.selected:after {
+    display: none; 
+  }
+  ul.caption {
+    font-size: 14px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .cd-svg-clipped-slider .caption {
+    margin: -150px auto 0;
+  }
+  .cd-svg-clipped-slider .caption small {
+    font-size: 10px;
+  }
+  .after-featured {
+    margin-top: -60px;
+  }
+  .cd-svg-clipped-slider .caption li.selected {
+    -webkit-transform: translateX(0) translateY(-10px);
+      -ms-transform: translateX(0) translateY(-10px);
+          transform: translateX(0) translateY(-10px);
+  }
+  .cd-svg-clipped-slider .navigation a {
+    top: 35% !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  ul.caption {
+    font-size: 12px;
+  }
+  .cd-svg-clipped-slider .caption {
+    margin: -130px auto 0;
+  }
+  .cd-svg-clipped-slider .gallery li.left, .cd-svg-clipped-slider .gallery li.right {
+    top: -10px;
+  }
+  .cd-svg-clipped-slider .navigation a {
+    top: 43% !important;
+  }
+  .gallery-wrapper .gallery {
+    margin-top: 30px;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -175,7 +258,7 @@ Main Components
   -webkit-transform: translateX(-50%) translateY(-50%) scale(0.7);
       -ms-transform: translateX(-50%) translateY(-50%) scale(0.7);
           transform: translateX(-50%) translateY(-50%) scale(0.7);
-  top: 50%;
+  top: 43%;
   z-index: 4;
   pointer-events: none;
   /* replace text with image */
