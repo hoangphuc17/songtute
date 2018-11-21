@@ -130,6 +130,7 @@ jQuery(document).ready(function($){
         if (scrollFilter >= 250) {
             //clearHeader, not clearheader - caps H
             $(".filter-row").addClass("filter-fixed");
+            $('.filter-row').css('width', $('.main-padding').width());
         }
         else {
           $(".filter-row").removeClass("filter-fixed");

@@ -1,0 +1,7 @@
+FROM mariadb:latest
+COPY ./song-tu-te/songtute.sql /docker-entrypoint-initdb.d/songtute.sql
+RUN sed -i 's/khuyen.local\/songtute.vn/songtute.local/g' /docker-entrypoint-initdb.d/songtute.sql
+
+# ENTRYPOINT ["/docker-entrypoint-init.sh"]
+
+# CMD ["mysqld"]

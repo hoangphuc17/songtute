@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="90px" viewBox="0 0 78 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Polygon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="detail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M42,1.73205081 L74.9711432,20.7679492 C76.8275496,21.839746 77.9711432,23.8205081 77.9711432,25.9641016 L77.9711432,64.0358984 C77.9711432,66.1794919 76.8275496,68.160254 74.9711432,69.2320508 L42,88.2679492 C40.1435935,89.339746 37.8564065,89.339746 36,88.2679492 L3.02885683,69.2320508 C1.17245037,68.160254 0.0288568297,66.1794919 0.0288568297,64.0358984 L0.0288568297,25.9641016 C0.0288568297,23.8205081 1.17245037,21.839746 3.02885683,20.7679492 L36,1.73205081 C37.8564065,0.660254038 40.1435935,0.660254038 42,1.73205081 Z" id="Polygon" fill="#EFEFEF"></path>
+    </g>
+</svg>

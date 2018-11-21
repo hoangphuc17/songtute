@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/resp.css">
+    <link rel="stylesheet" href="assets/css/svg-slider.css">
+    <title>Sống Tử Tế</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark navbar-expand-lg fixed-top navbar-tute">
+        <a class="navbar-brand" href="#"><img src="assets/img/logo-top.png"></a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-menu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Trang chủ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="tapluyen" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tập luyện
+              </a>
+              <div class="dropdown-menu" aria-labelledby="tapluyen">
+                <a class="dropdown-item" href="#">Yoga</a>
+                <a class="dropdown-item" href="#">Fitness</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="tapluyen" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ăn uống
+              </a>
+              <div class="dropdown-menu" aria-labelledby="tapluyen">
+                <a class="dropdown-item" href="#">Món chính</a>
+                <a class="dropdown-item" href="#">Khai vị</a>
+                <a class="dropdown-item" href="#">Tráng miệng</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="tapluyen" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Khám phá
+              </a>
+              <div class="dropdown-menu" aria-labelledby="tapluyen">
+                <a class="dropdown-item" href="#">Ý tưởng</a>
+                <a class="dropdown-item" href="#">Địa điểm</a>
+                <a class="dropdown-item" href="#">Sự kiện</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-3" href="#search"><i class="ti-search"></i></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 search-top">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-warning my-3" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <div id="search" class="fade">
+      <a href="#" class="close-btn" id="close-search">
+          <i class="ti-close"></i>
+      </a>
+      <input placeholder="nhập từ khóa tìm kiếm..." id="searchbox" type="search"/> <button type="submit"><i class="ti-search"></i></button>
+    </div>
+    <main>
+      <div class="bg-detail-header">
+        <img src="assets/img/photo01.jpeg">
+        <div>
+          <h2 class="main-detail-title">Morning yoga for beginner</h2>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="ti-home"></i> Trang chủ</a></li>
+              <li class="breadcrumb-item"><a href="#">Tập luyện</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Yoga</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+      <div class="bg-triangle bgadd-gray after-header">
+        <div class="container t-90">
+          <div class="header-main" style="background-image: url(assets/img/photo01.jpeg);">
+            <a href="#" class="btn hexbox-btn">Tiếp tục bài học</a>
+          </div>
+          <div class="mt-3 after-header-main">
+            <div class="header-tag">
+              <span class="border-right"><small>Độ khó</small>Intermediate</span>
+              <span class="border-right"><small>Thời lượng</small>20 giờ</span>
+              <span><small>Chia sẻ</small><a href="#" class="fs-18" style="color: #4267b2"><i class="ti-facebook"></i></a> <a href="#" class="fs-18" style="color: #1da1f2"><i class="ti-twitter-alt"></i></a> <a href="#" class="fs-18" style="color: #bd081c"><i class="ti-pinterest-alt"></i></a> </span>
+            </div>
+            <div><a href="#" class="btn hex-btn hex-btn-orange">Lưu lại</a></div>
+          </div>
+          <div class="tag-container">
+            <a href="#" class="badge badge-pill">Beginner</a>
+            <a href="#" class="badge badge-pill">Primary</a>
+            <a href="#" class="badge badge-pill">yoga</a>
+          </div>
+          <div class="main-preview">
+              <input id="slide-preview" type="checkbox" role="button" />
+              <label for="slide-preview"><i class="ti-arrow-circle-down"></i></label>
+              <div class="main-preview-ct">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum, dolor vitae venenatis semper, turpis ex mollis lacus, quis semper neque ligula ac dolor. Nunc vel gravida felis, vel ultrices massa. Proin in tortor eget erat mollis mattis. Maecenas luctus faucibus metus, et maximus massa bibendum et. Vestibulum interdum urna et ante tristique tempus. Aliquam iaculis purus at libero malesuada porta. Praesent lacinia porta ultrices. Donec nec odio tristique ligula ullamcorper bibendum at pulvinar lorem. Ut vestibulum ut elit vel aliquet. Morbi sit amet pharetra massa. Vivamus tempus nulla sit amet nulla vehicula, ac bibendum augue aliquet. Donec ante ligula, dictum in porttitor a, finibus nec elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              </div>
+          </div>
+          <div class="row my-5 pb-5">
+            <div class="col-lg-9 col-sm-12">
+              <div class="panel-white">
+                <h4 class="panel-title">Chương trình học</h4>
+                <ul class="learn-list">
+                  <li class="completed"><a href="#"><span class="learn-check"><i class="ti-control-record"></i></span><span class="learn-title">Why this course? Why now? <small>- 05:16</small></span><span class="learn-after"><span class="learn-hover"></span></span></a></li>
+                  <li><a href="#"><span class="learn-check"><i class="ti-control-record"></i></span><span class="learn-title">What is Yoga? <small>- 05:16</small></span><span class="learn-after"><span class="learn-hover"></span></span></a></li>
+                  <li><a href="#"><span class="learn-check"><i class="ti-control-record"></i></span><span class="learn-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit <small>- 05:16</small></span><span class="learn-after"><span class="learn-hover"></span></span></a></li>
+                  <li><a href="#"><span class="learn-check"><i class="ti-control-record"></i></span><span class="learn-title">Etiam sed commodo nisi <small>- 05:16</small></span><span class="learn-after"><span class="learn-hover"></span></span></a></li>
+                  <li><a href="#"><span class="learn-check"><i class="ti-control-record"></i></span><span class="learn-title">Curabitur auctor lectus non justo tempor <small>- 05:16</small></span><span class="learn-after"><span class="learn-hover"></span></span></a></li>
+                  <li><a href="#"><span class="learn-check"><i class="ti-control-record"></i></span><span class="learn-title">What is Yoga? <small>- 05:16</small></span><span class="learn-after"><span class="learn-hover"></span></span></a></li>
+                  <li><a href="#"><span class="learn-check"><i class="ti-control-record"></i></span><span class="learn-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit <small>- 05:16</small></span><span class="learn-after"><span class="learn-hover"></span></span></a></li>
+                  <li><a href="#"><span class="learn-check"><i class="ti-control-record"></i></span><span class="learn-title">Etiam sed commodo nisi <small>- 05:16</small></span><span class="learn-after"><span class="learn-hover"></span></span></a></li>
+                  <li><a href="#"><span class="learn-check"><i class="ti-control-record"></i></span><span class="learn-title">Curabitur auctor lectus non justo tempor <small>- 05:16</small></span><span class="learn-after"><span class="learn-hover"></span></span></a></li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+              <div class="panel-white">
+                <div class="panel-author-header">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 173.20508075688772 200">
+                    <defs>
+                      <clipPath id="author-1">
+                        <path d="M77.94228634059948 4.999999999999999Q86.60254037844386 0 95.26279441628824 4.999999999999999L164.54482671904333 45Q173.20508075688772 50 173.20508075688772 60L173.20508075688772 140Q173.20508075688772 150 164.54482671904333 155L95.26279441628824 195Q86.60254037844386 200 77.94228634059948 195L8.660254037844387 155Q0 150 0 140L0 60Q0 50 8.660254037844387 45Z"></path>
+                      </clipPath>
+                    </defs>
+                    <image xlink:href="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7e89aa20603ea9fe62ddc6014276ca41&auto=format&fit=crop&w=800&q=60" clip-path="url(#author-1)" />
+                  </svg>
+                  <h4><small>Huấn luyện viên</small> Ana Phạm</h4>
+                </div>
+                <p class="p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a nisi fringilla, tempus augue sit amet, accumsan velit. Vivamus cursus ultricies nibh, ut lobortis urna porta a. Nulla et orci accumsan enim elementum sagittis. Ut sed nisi eget lacus facilisis elementum at a felis. Donec enim arcu, mollis ut dui ac, egestas semper risus.</p>
+                <p class="text-center"><a href="#" class="btn hex-btn">Xem thêm</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-triangle bg-white" style="margin-top: -60px;">
+        <div class="main-padding">
+          <div class="container-fluid">
+            <h2 class="text-center">Các lớp liên quan</h2>
+            <div class="row">
+              <div class="col-lg-3 col-sm-6 col-xs-12 py-3">
+                <div class="card">
+                  <img class="card-img-top" src="assets/img/samp01.png">
+                  <span class="post-type"><i class="ti-book"></i></span>
+                  <div class="card-body">
+                    <a href="#">
+                      <small class="namecate">Fitness</small>
+                      <h5 class="card-title">Tập luyện làm tăng kích thước vòng một</h5>
+                      <p class="card-text">Dạy bởi thầy Patrick Beach đến từ Đan Mạch.</p>
+                    </a>
+                  </div>
+                  <div class="card-footer">
+                    <span class="badge badge-pill badge-tute">Beginner</span>
+                    <span class="badge badge-pill badge-tute">2 tuần</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 col-xs-12 py-3">
+                <div class="card">
+                  <img class="card-img-top" src="assets/img/samp01.png">
+                  <span class="post-type"><i class="ti-book"></i></span>
+                  <div class="card-body">
+                    <a href="#">
+                      <small class="namecate">Fitness</small>
+                      <h5 class="card-title">Tập luyện làm tăng kích thước vòng một</h5>
+                      <p class="card-text">Dạy bởi thầy Patrick Beach đến từ Đan Mạch.</p>
+                    </a>
+                  </div>
+                  <div class="card-footer">
+                    <span class="badge badge-pill badge-tute">Beginner</span>
+                    <span class="badge badge-pill badge-tute">2 tuần</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 col-xs-12 py-3">
+                <div class="card">
+                  <img class="card-img-top" src="assets/img/samp01.png">
+                  <span class="post-type"><i class="ti-book"></i></span>
+                  <div class="card-body">
+                    <a href="#">
+                      <small class="namecate">Fitness</small>
+                      <h5 class="card-title">Tập luyện làm tăng kích thước vòng một</h5>
+                      <p class="card-text">Dạy bởi thầy Patrick Beach đến từ Đan Mạch.</p>
+                    </a>
+                  </div>
+                  <div class="card-footer">
+                    <span class="badge badge-pill badge-tute">Beginner</span>
+                    <span class="badge badge-pill badge-tute">2 tuần</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 col-xs-12 py-3">
+                <div class="card">
+                  <img class="card-img-top" src="assets/img/samp01.png">
+                  <span class="post-type"><i class="ti-book"></i></span>
+                  <div class="card-body">
+                    <a href="#">
+                      <small class="namecate">Fitness</small>
+                      <h5 class="card-title">Tập luyện làm tăng kích thước vòng một</h5>
+                      <p class="card-text">Dạy bởi thầy Patrick Beach đến từ Đan Mạch.</p>
+                    </a>
+                  </div>
+                  <div class="card-footer">
+                    <span class="badge badge-pill badge-tute">Beginner</span>
+                    <span class="badge badge-pill badge-tute">2 tuần</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="row">
+        
+        <div class="col-lg-8 col-sm-12 order-lg-12">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 col-xs-6">
+              <h3>Tập luyện</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Fitness</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Yoga</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-6">
+              <h3>Ăn uống</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Món chính</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Khai vị</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tráng miệng</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-6">
+              <h3>Khám phá</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ý tưởng mới</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Địa điểm mới</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sự kiện mới</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-6">
+              <h3>Cộng đồng tử tế</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link hexlink-btm" href="#"><i class="ti-facebook"></i> Facebook</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hexlink-btm" href="#"><i class="ti-instagram"></i> Instagram</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hexlink-btm" href="#"><i class="ti-youtube"></i> Youtube</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 order-lg-1">
+          <div class="hex-contain">
+            <a href="#" class="footer-logo"></a>
+            <p><a href="#">Email: suppport@songtute.vn</a></p>
+            <p>Địa chỉ: 111A Lý Chính Thắng, Phường 6, Quận 3, TP. Hồ Chí Minh</p>
+            <p>© 2018 Bản quyền bởi songtute.vn</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#0" class="cd-top js-cd-top"><i class="ti-angle-up"></i></a>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/snap.svg-min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/btt.js"></script>
+  </body>
+</html>

@@ -3,7 +3,7 @@
     right: 20px;
     bottom: 20px;
   }
-  .card-columns {
+  .card-columns, .card-deck {
     column-count: 4;
   }
 }
@@ -16,6 +16,9 @@
   }
 }
 @media (max-width: 960px) {
+  main.video-detail {
+    margin-top: 0;
+  }
   .filter-row .form-control {
     width: auto !important;
   }
@@ -82,6 +85,34 @@
   }
 }
 @media (max-width: 768px) {
+  .panel-white {
+    margin-bottom: 15px;
+  }
+  input.toggle-sb-input:checked ~ .sidebar {
+    right: 0;
+  }
+  input.toggle-sb-input:checked ~ .main-content {
+    right: 350px;
+  }
+  input.toggle-sb-input:checked ~ label.toggle-sb {
+    right: 349px;
+  }
+  input.toggle-sb-input:checked ~ label.toggle-sb:after {
+    content: "\e649";
+  }
+  .sidebar {
+    right: -350px;
+  }
+  label.toggle-sb {
+    right: 0;
+  }
+  label.toggle-sb:after {
+    content: "\e64a";
+  }
+  .main-content { 
+    right: 0;
+    width: 100%;
+  }
   .main-detail-title {
     font-size: 24px;
   }
@@ -130,6 +161,9 @@
   }
 }
 @media (max-width: 425px) {
+  .content-header {
+    display: block;
+  }
   .after-header-main .header-tag {
     display: block;
     max-height: 100% !important;
@@ -146,7 +180,7 @@
     display: block;
   }
   .filter-ele {
-    display: block;
+    display: -webkit-inline-box;
   }
   .main-title {
     font-size: 20px;
@@ -221,8 +255,30 @@
   }
 }
 @media (max-width: 375px) {
+  .food-step li a {
+    display: block;
+  }
   .header-tag img {
     display: none;
+  }
+  .filter-ele {
+    display: block;
+  }
+  .btn-play-list, .btn-play-list i {
+    font-size: 10px;
+  }
+  .sidebar {
+    width: 300px;
+    right: -300px;
+  }
+  input.toggle-sb-input:checked ~ .sidebar {
+    right: 0;
+  }
+  input.toggle-sb-input:checked ~ .main-content {
+    right: 300px;
+  }
+  input.toggle-sb-input:checked ~ label.toggle-sb {
+    right: 299px;
   }
 }
 @media only screen and (min-width: 1024px) {

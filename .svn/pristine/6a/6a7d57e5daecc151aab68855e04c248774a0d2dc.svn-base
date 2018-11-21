@@ -1,0 +1,67 @@
+version: '3.1'
+services:
+
+
+  mysql:
+    # image: mariadb
+    build:
+      context: .
+      dockerfile: Dockerfile-db
+    volumes:
+      - stt-data:/var/lib/mysql
+      # - ./song-tu-te/songtute.sql:/docker-entrypoint-initdb.d/songtute.sql
+    networks:
+      - stt-net
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=songtute
+    # restart: always
+
+  wordpress:
+    image: wordpress:fpm
+    volumes:
+      - stt-source:/var/www/html
+      # - ./conf/wp-config.php:/var/www/html/wp-config.php
+      - ./song-tu-te/uploads:/var/www/html/wp-content/uploads
+      - ./plugins:/var/www/html/wp-content/plugins
+      - ./song-tu-te/themes/stt_theme:/var/www/html/wp-content/themes/stt_theme
+    networks:
+      - stt-net
+    environment:
+      - WORDPRESS_DB_NAME=songtute
+      - WORDPRESS_TABLE_PREFIX=hpk_
+      - WORDPRESS_DB_HOST=mysql
+      - WORDPRESS_DB_PASSWORD=password
+      # - WORDPRESS_DEBUG=1
+    links:
+      - mysql
+    depends_on:
+      - mysql
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - '80:80'
+    volumes:
+      - stt-source:/var/www/html
+      - ./nginx:/etc/nginx/conf.d
+      - ./logs/nginx:/var/log/nginx
+      - ./plugins:/var/www/html/wp-content/plugins
+      - ./song-tu-te/themes/stt_theme:/var/www/html/wp-content/themes/stt_theme
+      - ./song-tu-te/uploads:/var/www/html/wp-content/uploads
+    networks:
+      - stt-net
+    links:
+      - wordpress
+    # restart: always
+    depends_on:
+      - wordpress
+
+networks:
+  stt-net:
+    driver: bridge
+volumes:
+  stt-data:
+    driver: local
+  stt-source:
+    driver: local
