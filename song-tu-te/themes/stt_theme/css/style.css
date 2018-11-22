@@ -21,21 +21,28 @@ a {
 a:hover {
   text-decoration: none;
 }
-a:visited {
-  color: inherit;
-}
 h2 {
   color: #000;
   font-size: 32px;
   font-weight: 700;
 }
 .navbar-brand {
-	width: 102px;
+	width: 100px;
   position: absolute;
   bottom: -65px;
 }
 .navbar-brand img {
 	width: 100%;
+}
+.navbar-brand-index:after {
+  position: absolute;
+  top: 45px;
+  left: 7px;
+  width: 86px;
+  height: 9px;
+  content: '';
+  background: url(../img/logo-top-index.png) top center no-repeat;
+  background-size: contain;
 }
 .navbar-tute {
 	background-color: #000;
@@ -144,6 +151,9 @@ main {
   -moz-box-shadow: 0px 12px 26px 0px rgba(0,0,0,0.5);
   box-shadow: 0px 12px 26px 0px rgba(0,0,0,0.5);
 }
+.hexbox-btn:visited {
+  color: #fff;
+}
 .hexbox-btn:after {
   position: absolute;
   content: '';
@@ -245,6 +255,10 @@ main {
 }
 .card a {
   color: #000;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  height: 100%;
 }
 .card a .card-text {
   color: rgba(0,0,0,0.7);
@@ -295,6 +309,9 @@ main {
 }
 .btn-hex-lg:hover {
   transform: scale(1.2);
+  color: #fff;
+}
+.btn-hex-lg:visited {
   color: #fff;
 }
 footer {
@@ -348,11 +365,11 @@ footer .nav-link:hover, footer .nav-link:focus {
   display: block;
   background: url(../img/logo-btm.png) no-repeat top center;
   background-size: contain;
-  width: 115px;
-  height: 145px;
+  width: 100px;
+  height: 126px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: -160px;
+  margin-top: -155px;
   margin-bottom: 30px;
 }
 .cd-top {
@@ -445,7 +462,8 @@ footer .nav-link:hover, footer .nav-link:focus {
   color: rgba(0,0,0,1);
 }
 .card-footer {
-  border-top: 1px solid #f0f0f0;
+  border-top: 0;
+  background-color: #fff;
 }
 .bg-header {
   height: 240px;
@@ -493,7 +511,7 @@ footer .nav-link:hover, footer .nav-link:focus {
 .filter-row {
   font-size: 14px;
   display: flex;
-  padding: 60px 0 30px;
+  padding: 30px 0;
   background: #fff;
 }
 .filter-ele {
@@ -539,9 +557,9 @@ select:-moz-focusring {
 .filter-fixed {
   position: fixed;
   top: 60px;
-  width: 100%;
   z-index: 1020;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 45px 15px 15px 15px;
 }
 .post-type {
@@ -606,6 +624,9 @@ select:-moz-focusring {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+}
+.header-main-article {
+  padding-top: 300px;
 }
 .header-main:before {
   position: absolute;
@@ -814,6 +835,9 @@ select:-moz-focusring {
   padding: 5px 10px 7px;
   margin-bottom: 15px;
 }
+.tag-container a {
+  color: #464646;
+}
 .tag-container .badge {
   background-color: #e1e1e1;
   text-transform: uppercase;
@@ -821,6 +845,172 @@ select:-moz-focusring {
 .tag-container .badge:hover {
   color: #fff;
   background-color: #464646;
+}
+.fancythumb {
+  width: 100%;
+  display: block;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.fancythumb img {
+  width: 100%;
+}
+.fancythumb:after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.6);
+  content: "";
+  opacity: 0;
+  transition: all 0.2s;
+  z-index: 10;
+}
+.fancythumb:before {
+  content: "\e611";
+  font-family: 'themify';
+  opacity: 0;
+  transition: all 0.2s;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 24px;
+  z-index: 20;
+}
+.fancythumb:hover:after, .fancythumb:hover:before {
+  opacity: 1;
+}
+.material-list {
+  color: #F5A623;
+  font-weight: 500;
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+.material-list li {
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 15px 15px 15px 30px;
+}
+.material-list li:last-child, .food-step li:last-child {
+  border-bottom: 0;
+}
+.material-list li::before {
+  content: "•";
+  font-size: 22px;
+  width: 25px;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.material-list li span {
+  color: rgba(0,0,0,.5);
+}
+.material-list li span.material-name {
+  color: #F5A623;
+  flex-grow: 1;
+}
+.food-step {
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+}
+.food-step li {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 15px;
+}
+.food-step li a, .food-step li a:visited {
+  color: rgba(0,0,0,.7);
+}
+.food-step li a {
+  display: flex;
+}
+.food-step-step {
+  min-width: 90px;
+  height: 90px;
+  background: url(../img/hex-gray.svg) top center no-repeat;
+  background-size: 90px 90px;
+  text-align: center;
+  padding: 25px 0 0 0;
+  transform: scale(1);
+  transition: all .2s;
+  margin-bottom: 15px;
+}
+.food-step-step h6 {
+  font-weight: 700;
+}
+.food-step li a:hover .food-step-step {
+  transform: scale(1.15);
+}
+.food-step-step small {
+  display: block;
+  width: 100%;
+}
+.food-step-ct {
+  padding-left: 30px;
+}
+.article-content {
+  color: #000;
+  font-size: 16px;
+  margin: 30px 0;
+}
+.article-content h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.hex-list {
+  list-style: none;
+  padding-left: 0;
+}
+.hex-list li {
+  position: relative;
+  padding-left: 20px;
+}
+.hex-list li:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: url(../img/hex-orange.svg) top center no-repeat;
+  background-size: 10px 10px;
+}
+.hex-list a, .hex-list a:visited {
+  color: rgba(0,0,0,.5);
+  font-size: 14px;
+}
+.hex-list a:hover {
+  color: rgba(0,0,0,1);
+}
+.article-content .hex-list {
+  margin: 15px 0;
+}
+.article-content .figure {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #rgba(0,0,0,.7)
+}
+.small-figure {
+  max-width: 60%;
+}
+.article-author {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.article-author img {
+  margin-right: 5px;
 }
 /* ============ Hex Grid ============ */
 .hex-grid ul {
@@ -1186,4 +1376,13 @@ svg, image {
 }
 .fs-18 {
   font-size: 18px;
+}
+.card {
+  height: 100%;
+}
+.text-black, .text-black:visited {
+  color: rgba(0,0,0,1);
+}
+.text-black:hover {
+  color: rgba(0,0,0,.7);
 }
